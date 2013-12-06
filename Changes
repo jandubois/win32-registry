@@ -5,6 +5,8 @@ Revision history for Perl extension Win32::Registry.
 	- Add Github repo link to META.yml
         - Fix "Could not find a typemap for C type 'FILETIME'" problem
           [rt#75671].
+        - Fix lastwritetime return value of RegQueryInfoKey(). Existing
+          code would never assign it back to the output parameter.
 
 0.10  Mon Jun 23 2008
         - Skip tests when not running as an administrator.

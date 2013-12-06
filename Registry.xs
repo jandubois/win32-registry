@@ -803,7 +803,7 @@ RegQueryInfoKey(hkey,kclass,classsz,reserved,numsubkeys,maxsubkeylen,maxclasslen
 	maxvalnamelen
 	maxvaldatalen
 	secdesclen
-	lastwritetime		if (RETVAL) { ft2timet(&ft); }
+	lastwritetime		SETNV(11, ft2timet(&ft));
 	
 
 bool
