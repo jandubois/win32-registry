@@ -545,7 +545,7 @@ RegEnumKeyEx(hkey,idx,subkey,classname,lastwritetime)
 	DWORD idx
 	char *subkey = NO_INIT
 	char *classname = NO_INIT
-	FILETIME lastwritetime = NO_INIT
+	double lastwritetime = NO_INIT
     CODE:
 	char keybuffer[TMPBUFSZ];
 	DWORD keybuffersz = TMPBUFSZ;
@@ -775,7 +775,7 @@ RegQueryInfoKey(hkey,kclass,classsz,reserved,numsubkeys,maxsubkeylen,maxclasslen
 	DWORD maxvalnamelen = NO_INIT
 	DWORD maxvaldatalen = NO_INIT
 	DWORD secdesclen = NO_INIT
-	FILETIME lastwritetime = NO_INIT
+	double lastwritetime = NO_INIT
     CODE:
 	char keyclass[TMPBUFSZ];
 	FILETIME ft;

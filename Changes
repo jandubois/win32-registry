@@ -1,8 +1,10 @@
 Revision history for Perl extension Win32::Registry.
 
-0.11  Wed Dec 4 2013
+0.11  Wed Dec 6 2013
 	- Fix required perl version 5.6 -> 5.006.
 	- Add Github repo link to META.yml
+        - Fix "Could not find a typemap for C type 'FILETIME'" problem
+          [rt#75671].
 
 0.10  Mon Jun 23 2008
         - Skip tests when not running as an administrator.
